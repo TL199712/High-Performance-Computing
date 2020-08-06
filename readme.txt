@@ -1,3 +1,15 @@
+Sources-v1/Sources-v2.cu:
+
+Use CUDA to calculate the solution of diffustion with sinks/sources
+
+u_xx+u_yy=g(x)
+u_x=0 on left and right boundary
+u=0 on upper and lower boundary
+
+Use the following command to compile and run:
+$ nvcc -o Sources Sources-v1.cu
+$ ./Sources 128 1.8 1e-9 10000
+
 allen.c:
 
 This is the source file of the MPI program calculating the numerical solution of Allen-Cahn eation. In order to make an executable and get the output, one can simply use the following command in bash:
